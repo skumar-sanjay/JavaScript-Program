@@ -1,0 +1,23 @@
+<!--write a html in a paragraph and read on other para to click button-->
+<html>
+    <head>
+        <script>
+            var r;
+        function getRead()
+        {
+             r=document.getElementById("para").innerText
+        }
+        function getWrite()
+        {
+          document.getElementById("para1").innerText=r;
+        }
+        </script>
+    </head>
+    <body>
+        <input type="button" value="read" onclick="getRead()" id="btn1"/><br><br>
+<p id="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis cupiditate qui tenetur ipsam pariatur iusto ullam, voluptatum dolore doloremque quaerat perferendis, nisi ducimus sunt assumenda ex ratione deserunt.</p><br><br>
+
+<input type="button" value="write" onclick="getWrite()" id="btn2"/><br><br>
+<p id="para1"></p>
+    </body>
+    </html>

@@ -1,0 +1,52 @@
+<!--read the nage of week on (1-7) in p tag value take in select tag-->
+<html>
+    <head>
+        <script>
+      function getWeek()
+      {
+        var n,week;
+    n=document.getElementById("days").value;
+    switch(n)
+    {
+        case '1':
+         n="Monday";
+        break;
+        case '2':
+        n="Sunday";
+        break;  
+        case '3':
+            n="Tuesday";
+            break;
+        case '4':
+            n="Wednesday";
+            break;
+        case '5':
+            n="Thursday";
+            break;
+        case '6':
+            n="Friday"; 
+            break;
+            case '7':
+            n="Saturday"; 
+            break; 
+        default:
+            n="invalid value"+n;       
+    }
+    document.getElementById("para").innerHTML="day is:"+n;
+      }
+        </script>
+    </head>
+    <body>
+<select id="days" >
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+<option>7</option>
+</select><br><br>
+<input type="button" value="submit" onclick="getWeek()"/>
+<p id="para"></p>
+    </body>
+</html>

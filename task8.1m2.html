@@ -1,0 +1,22 @@
+<!--create a JS object and demonstrate the use of protype property in JS-->
+<script>
+    function product(){
+        this.pid=143;
+        this.pname='Laptop';
+        this.unprice=5600;
+        this.qty=5;
+        printProduct=function(){
+        alert("Product Id: "+this.pid+"Product name: "+this.pname+"Unit Price: "+this.uprice+"Quantity: "+this.qty);
+    }};
+    product.prototype.total=0;
+    product.prototype.getTotalPrice=function()
+    {
+        this.total=this.uprice*this.qty;
+        return this.total;
+    }
+    //test above object..
+    var p=new product()
+    p.printProduct();
+     var x=p.getTotalPrice();
+    alert("Total price is: "+x);
+</script>

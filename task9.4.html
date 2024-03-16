@@ -1,0 +1,22 @@
+<!--create a html page to create a digital clock in JS-->
+<html>
+    <head>
+        <script>
+  function getTimer()
+  {
+    var d=new Date();
+    var hh,mm,ss,ms,mydv,tt=""; 
+    mydv=document.getElementById("dv");
+    hh=d.getHours();
+    mm=d.getMinutes();
+    ss=d.getSeconds();
+   
+    mydv.innerHTML=hh+":"+mm+":"+""+ss+tt;
+    window.setTimeout("getTimer()");
+  }
+        </script>
+        <body onload="getTimer()">
+<div id="dv" style="height:280px; width:690px; background-color:black; color: red; padding:30px; margin:0px auto;margin-top:200px; font-size: 200px; border-radius:30px;"></div>
+        </body>
+    </head>
+</html>

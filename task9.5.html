@@ -1,0 +1,39 @@
+<!--task9.5-->
+<html>
+    <head>
+     <script>
+        function getAge(txtdob,dv) 
+        {
+            var udob=txtdob.value;
+            var arr=udob.split('/');
+            var cdate=new Date();
+           var cdd,cmm,cyy,udd,umm,uyy,dd,mm,yy;
+           cdd=cdate.getDate();
+           cmm=cdate.getMonth()+1;
+           cyy=cdate.getFullYear();  
+           udd=arr[0];
+           umm=arr[1];
+           uyy=arr[2];
+           if(cdd<udd)
+           {
+            cdd=cdd+30;
+            cmm=cmm-1;
+           }
+           dd=cdd-udd;
+           if(cmm<umm)
+           {
+            cmm=cmm+12;
+            cyy=cyy-1;
+           }
+           mm=cmm-umm;
+           yy=cyy-uyy;
+           dv.innerText="You are "+yy+ "Years "+mm+"Month and "+dd+"Days old.";
+        }
+     </script>   
+    </head>
+    <body>
+        <input type="text" id="txtdob" placeholder="enter Dob(DD/MM/YYYY)"/><br><br>
+        <input type="button" onclick="getAge(txtdob,dv)" value="Get Age"/><br><br>
+        <div id="dv"></div>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<!--take input in text box and print them in another box-->
+<html>
+    <head>
+        <script>
+function getValue()
+{
+var n,out;
+n=document.getElementById("val").value;
+out=n/12;
+document.getElementById("res").value=out;
+}
+         </script>
+    </head>
+    <body>
+        <input type="number" placeholder="enter value in inch" id="val"/><br><br/>
+        <input type="button" value="result" onclick="getValue()"><br><br>
+        <input type="number" placeholder="result in feet" id="res"/>
+    </body>
+</html>

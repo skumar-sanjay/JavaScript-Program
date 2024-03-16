@@ -1,0 +1,26 @@
+<!--create a html page to find the sum of digit of a number read a number from input tag and print result using while loop inside a h3 tag. on click button click-->
+<html>
+    <head>
+        <script>
+            function getSum()
+            {
+ var n,res,d,x;
+ n=document.getElementById("txt").value;
+    res=0;
+x=n; //initilization
+
+while(x>0){
+    d=x%10;
+    res=res+d;
+    x=parseInt(x/10);
+}
+document.getElementById("res").innerText=res;
+            }
+        </script>
+    </head>
+    <body>
+        <input type="number" id="txt" placeholder="enter a number"/><br><br>
+        <input type="button" value="find sum" onclick="getSum()"/><br><br>
+        <h3 id="res"></h3>
+    </body>
+</html>

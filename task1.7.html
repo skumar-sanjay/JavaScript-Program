@@ -1,0 +1,21 @@
+<!--create a html page display static image and some text inside div and print all data in html form inside p tag click on button-->
+<html>
+    <head>
+        <script>
+ function getData()
+ {
+    var n;
+    n=document.getElementById("data").innerHTML;
+    document.getElementById("output").innerHTML=n;
+ } 
+        </script>
+    </head>
+    <body>
+        <div id="data">
+            <img src="./images.jpg" height="300px" width="250px">
+            <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus facilis aliquam provident repudiandae hic natus! Reprehenderit, autem.</h3>
+        </div><br>
+        <input type="button" value="submit" onclick="getData()"/><br><br>
+        <p id="output"></p>
+    </body>
+</html>

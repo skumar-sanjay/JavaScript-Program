@@ -1,0 +1,20 @@
+<!--create an array store name of 8 frind print in table table tag on clcik button-->
+<html>
+    <head>
+        <script>
+            function getName(t){
+                var name=["Sanjay","Rohan","Aman","Mohit","Sobhit","Rahul","Sachin","Vaibhav"];
+        
+            var items="<tr><th>SNo</th><th>Name</th></tr>";
+            for(x=0;x<name.length;x++){
+                items=items+"<tr><td>"(x+1)+"</td><td>"+name[x]+"</td></tr>";
+            }
+            t.innerHTML=items;
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" id="btn" value="click me!" onclick="getName(tbl)"><br><br>
+        <table id="tbl" border="1"> </table>
+    </body>
+</html>

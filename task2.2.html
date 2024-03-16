@@ -1,0 +1,47 @@
+<!--create a simple calculator ,take two input intext box andoperatins in select tag-->
+<html>
+    <head>
+        <script>
+        function Calculator(n1,n2,cal)
+        {
+            var t1,t2,res;
+            t1=parseInt(n1.value);
+            t2=parseInt(n2.value);
+            switch(cal.value){
+                case '+':
+                         res=t1+t2;
+                         break;
+                case '-':
+                         res=t1-t2;
+                         break;
+               case '*':
+                         res=t1*t2;
+                         break;
+                case '/':
+                         res=t1/t2;
+                         break;
+                 case '%':
+                         res=t1%t2;
+                         break;
+                default:
+                    result=0;
+                    res="undsfine"+res;
+            }
+            document.getElementById("para").innerHTML="result is :" +res;
+        }
+        </script>
+    </head>
+    <body>
+    <input type="number" placeholder="Enter first number" id="num1"/><br><br>
+    <input type="number" placeholder="Enter second number" id="num2"/><br><br>
+     <select id="cal" onchange="Calculator(num1,num2,cal)"/>
+     <option value="">select operatons</option>
+     <option>+</option>  
+     <option>-</option>   
+     <option>*</option>   
+     <option>/</option> 
+     <option>%</option> 
+    </select> <br><br>
+<p id="para"></p>
+    </body>
+</html>

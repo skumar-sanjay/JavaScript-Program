@@ -1,0 +1,42 @@
+<!--create a class "Rectangle" by using class keyword. Develop function to get area and perimeter from two text box print in div tag on click button-->
+<html>
+    <head>
+        <script>
+        class Rectangle
+        {
+          constructor(length,breath)
+          {
+            this.len=length;
+            this.width=breath;
+          }
+          getArea()
+          {
+            var area=this.len*this.width;
+            return area;
+          }
+          getPeri()
+          {
+            var peri=2*(parseInt(this.len)+parseInt(this.width));
+            return peri;
+          }
+        }
+        function GetAp(h,w,dv)   //object
+        {
+         var H,W,ar,pr;
+         H=h.value;
+         W=w.value;
+         var obj=new Rectangle(H,W)
+         ar=obj.getArea();
+         pr=obj.getPeri();
+         dv.innerHTML="Area of Rectangle is: "+ar+"<br>Perimeter of Rectangle is: "+pr;
+        }
+
+        </script>
+    </head>
+    <body>
+        <input type="number" placeholder="Enter length of rectangle" id="h"/><br><br>
+        <input type="number" placeholder="Enter width of rectangle" id="w"/><br><br>
+        <input type="button" value="click me!" onclick="GetAp(h,w,dv)"/><br><br>
+        <div id="dv"></div>
+    </body>
+</html>

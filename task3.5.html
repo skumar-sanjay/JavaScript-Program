@@ -1,0 +1,18 @@
+<!--create a html page to demonstrate the use of on blur event-->
+<html>
+    <head>
+        <script>
+            function changeCol(txt)
+            { 
+             txt.style.color="green";
+             txt.style.fontSize="40px";
+             txt.style.backgroundColor="lightblue";
+            }
+        </script>
+    </head>
+    <body>
+        <input type="text" id="textname" placeholder="name" onblur="changeCol(this)"/><br><br>
+        <input type="text" id="textage" placeholder="age" onblur="changeCol(this)"/><br><br>
+        <input type="button" value="click here!"/>
+    </body>
+</html>

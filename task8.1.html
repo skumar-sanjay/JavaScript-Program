@@ -1,0 +1,45 @@
+<script>
+    class EmpBasic
+    {
+        constructor()
+        {
+            this.EmpName="";
+            this.EmpId=0;
+        }
+        setEmpBasic(Ename,Eid)
+        {
+            this.EmpName=Ename;
+            this.EmpId=Eid;
+        }
+        getEmpBasic()
+        {
+            var detail="Employee Name: "+" "+this.EmpName+"Employee Id: "+" "+this.EmpId;
+            return detail;
+        }
+    }
+    class salary extends EmpBasic
+    {
+        constructor()
+        {
+            super();
+            this.salary_amount=0;
+            this.salary_month="";
+        }
+        setEmpDetails(name,id,amount,month)
+        {
+            this.setEmpBasic();
+            this.salary_amount=amount;
+            this.salary_month=month;
+        }
+        getEmpDetails()
+        {
+            var x=this.getEmpBasic();
+            var y="Salary amount:"+" "+this.salary_amount+" " +"salay month: "+this.salary_month;
+            return x+" "+y;
+        }
+    }
+    var s=new salary();
+    s.setEmpDetails("Sanjay",5,8000,"october");
+    var res=s.getEmpDetails();
+    alert(res);
+</script>

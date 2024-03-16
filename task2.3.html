@@ -1,0 +1,19 @@
+<!--check number is even or odd using ternary operator print result inside div-->
+<html>
+    <head>
+        <script>
+function getNum()
+{
+var n1=document.getElementById("num");
+n1=num.value;
+n1%2==0 ?
+ document.getElementById("dv").innerHTML="number is even": document.getElementById("dv").innerHTML="number is odd";
+}
+        </script>
+    </head>
+    <body>
+    <input type="number" placeholder="enter any number" id="num"/><br><br>
+    <input type="button" value="result" onclick="getNum()"/><br><br>
+   <div id="dv"></div> 
+    </body>
+</html>

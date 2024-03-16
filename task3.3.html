@@ -1,0 +1,24 @@
+<!--create html to change size of img on click onmouseover-->
+<html>
+    <head>
+
+        <script>
+        function getChange(pic)
+        {
+  pic.width=500;
+  pic.height=700;
+        }
+        function getRes(pic)
+        {
+  pic.width=250;
+  pic.height=300;
+        }
+        </script>
+
+    </head>
+
+    <body>
+    <img id="imgchange" src="./images.jpg" height="300px" width="250px" onmouseover="getChange(imgchange)" onmouseout="getRes(imgchange)"/>
+    </body>
+
+</html>

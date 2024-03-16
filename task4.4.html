@@ -1,0 +1,23 @@
+<!--create html page to show item of an array in select tag on click button-->
+<html>
+    <head>
+        <script>
+function getItem()
+{
+    var arr=["Aman","Rohan","Sohit","Anuj","Vaibhav"];
+    var dd=document.getElementById("slt");
+    var item="<option value=''>select age</option>";
+    for(x=0;x<arr.length;x++){
+        item=item+"<option>"+arr[x]+"</option>";
+    }
+    dd.innerHTML=item;
+}
+        </script>  
+    </head>
+
+    <body>
+<input type="button" value="Click Me!" onclick="getItem()"/><br><br>
+<select id="slt"></select>
+    </body>
+
+</html>

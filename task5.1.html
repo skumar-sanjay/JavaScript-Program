@@ -1,0 +1,20 @@
+<!--create a html page to read first name and last name of a person from 2 textbox and print full name inside a span tag on button-->
+<html>
+    <head>
+        <script>
+  function getName(txt1,txt2,dv)
+  {
+    var n1=txt1.value;
+    var n2=txt2.value;
+    var name=n1+" "+n2;
+    document.getElementById("spn").innerText=name;
+  }
+        </script>
+    </head>
+    <body>
+        <input type="text" placeholder="first name" id="txt1"/><br><br>
+        <input type="text" placeholder="last name" id="txt2"/><br><br>
+        <input type="button" value="click me!" onclick="getName(txt1,txt2,spn)"/><br><Br>
+            <span id="spn"></span>
+    </body>
+</html>

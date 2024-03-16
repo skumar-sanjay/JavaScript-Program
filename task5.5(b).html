@@ -1,0 +1,24 @@
+<!--create a html page to to read full name of a person from imput tag and read short name of person in paragraph tag on button click-->
+<html>
+    <head>
+<script>
+    function shortName(n,pr)
+    {
+        var ch="";
+        var str=n.value;
+        str=str.split(' ');
+        for(x=0;x<str.length-1;x++){
+    
+            ch=ch+str[x].charAt(0).toUpperCase()+".";
+        }
+        fullname=ch+str[str.length-1];
+        pr.innerHTML=fullname;
+    }
+</script>
+    </head>
+    <body>
+<input type="text" placeholder="enter full name" id="ename"/><br><br>
+<input type="button" value="click me!" onclick="shortName(ename,para)"/><br><br>
+<p id="para"></p>
+    </body>
+</html>

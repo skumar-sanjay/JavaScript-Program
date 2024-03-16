@@ -1,0 +1,32 @@
+<!--create a html page od div tag and exchange the style of on to other in dev-->
+<html>
+    <head>
+        <script>
+function applyCSS()
+{
+    var p,r,n;
+    r=document.getElementById("para").style.backgroundColor;
+    p=document.getElementById("dvs").style.backgroundColor;
+    document.getElementById("dvs").style.backgroundColor=r;
+    document.getElementById("para").style.backgroundColor=p;
+    
+    // var dv=document.getElementById("dvs");
+    // pr.style.backgroundColor=dv.style.backgroundColor;
+    // pr.style.color=dv.style.color;
+    // pr.style.width=dv.style.width;
+    // pr.style.border=dv.style.border;
+    
+    // var pr=document.getElementById("para");
+    // dv.style.backgroundColor=pr.style.backgroundColor;
+    // dv.style.color=pr.style.color;
+    // dv.style.width=pr.style.width;
+    // dv.style.border=pr.style.border;
+}
+        </script>
+    </head>
+    <body>
+        <input type="button" id="btn" onclick="applyCSS()"  value="change"/><br><br> 
+        <div id="dvs" style="background-color:blue;color:red;width:300px;font-size:25px;border:3px solid black">My name is Sanjay yadav.</div>
+        <p id="para" style="background-color:green;color:black;width:500px;font-size:40px;border:3px solid black;">MVIET</p>   
+    </body>
+</html>

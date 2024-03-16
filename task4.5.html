@@ -1,0 +1,21 @@
+<!--create a html page insert item in array and show in ul tag-->
+<html>
+    <head>
+        <script>
+function getRes()
+{
+    var arr=["toys","mobile","laptop","mouse","clothes"];
+    var dd=document.getElementById("list");
+    var item="";
+    for(x=0;x<arr.length;x++){
+        item=item+"<li>"+arr[x]+"</li>";
+    }
+    dd.innerHTML=item;
+}
+        </script>
+    </head>
+    <body>
+        <input type="button" value="click me!" onclick="getRes()"/><br><br>
+        <ul id="list"></ul>
+    </body>
+</html>

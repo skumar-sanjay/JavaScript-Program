@@ -1,0 +1,21 @@
+<!--create a js object with name having property id,brand,price ,processor. and print all data inside a div tag-->
+<html>
+    <head>
+        <script>
+            function getRes(dv)
+            {
+            var Lappy={Id:551416,Brand:'Apple',Price:100000,Processor:'Mac180',getDetail:function(){
+                var info="Id is: "+this.Id+"<br>"+this.Brand+this.Price+this.Processor;
+                var info="Id is: "+this.Id+"<br>Brand is: "+this.Brand+"<br>Price is: "+this.Price+"<br>Processor is: "+this.Processor;
+                return info;
+            }};
+              var info=Lappy.getDetail();
+              document.getElementById("dv").innerHTML=info;
+        }
+        </script>
+    </head>
+    <body>
+        <input type="button"value ="click me!" onclick="getRes(dv)"/><br><br>
+        <div id="dv"></div>
+    </body>
+</html>

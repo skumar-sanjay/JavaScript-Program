@@ -1,0 +1,22 @@
+<!--create a html page to change the color and size of p tag in js.click on button-->
+<html>
+    <head>
+          <script>
+ function getCSS()
+ {
+    var pr=document.getElementsByTagName("p");
+    for(x=0;x<pr.length;x++){
+        pr[x].style.color="blue";
+        pr[x].style.fontSize="25px";
+    }
+ }
+          </script>
+    </head>
+        <body>
+<button onclick="getCSS()" >click me!</button>
+<p>java</p>
+<p>.Net</p>
+<div>jquery</div>
+<p>js</p>
+        </body>
+</html>

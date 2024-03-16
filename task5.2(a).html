@@ -1,0 +1,21 @@
+<!--create a html page find length of string and also first five charecter of string-->
+<html>
+    <head>
+<script>
+function getRes(txt,spn)
+{
+  var mystr=txt.value;
+  spn.innerHTML="string is: "+mystr;
+  var x=mystr.length;
+  spn.innerText="length of string is: "+x;
+   var s=mystr.substring(0,5);
+   spn.innerHTML="first 5 character is: "+s;
+
+}
+</script>
+    </head>
+    <input type="text" placeholder="enter string" id="txt"/><br><br>
+    <input type="button" value="click me!" onclick="getRes(txt,spn)"/><br><Br>
+        <span id="spn"></span>
+
+</html>

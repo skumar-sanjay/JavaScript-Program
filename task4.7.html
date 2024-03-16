@@ -1,0 +1,22 @@
+<!--create a html page to assign 10 numbers in array and print into s p tag-->
+<html>
+    <head>
+        <script>
+function getNum(p)
+{
+    var nums=[14,56,876,34,556,67,234,56,78,986];
+  nums.sort(function(a,b){
+  return a-b;
+});
+var item="";
+for(x=0;x<nums.length;x++){
+    item=item+"<li>"+nums[x]+"</li>";
+}
+p.innerHTML=item;
+}
+        </script>
+    </head>
+    <body onload="getNum(para)">
+        <p id="para"></p>
+    </body>
+</html>

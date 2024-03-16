@@ -1,0 +1,20 @@
+<!--create a html page to read a string from input box and print first(0) index character and its ASCII value in div tag on click button-->
+<html>
+    <head>
+        <script>
+function getRes(txt,dv)
+{
+    var mystr=txt.value;
+       x=mystr.charAt(0);
+       dv.innerHTML="0 index value is: "+x;
+       y=mystr.charCodeAt(0);
+       dv.innerText="0 index ASCII value is: "+y;
+}
+        </script>
+    </head>
+    <body>
+        <input type="text" placeholder="enter any string" id="txt"/><br><br>
+        <input type="button" value="click me!" onclick="getRes(txt,dv)"/><br><br>
+        <div id="dv"></div>
+    </body>
+</html>

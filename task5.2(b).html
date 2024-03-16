@@ -1,0 +1,21 @@
+<!--create a html page to read two string from text box and concat into one string and print into div tag on click button-->
+<html>
+    <head>
+        <script>
+function Concat(txt1,txt2,dv)
+{
+    var t1=txt1.value;
+    var t2=txt2.value;
+    var t3=t1+" "+t2
+    dv.innerText="concat string is: "+t3;
+}
+        </script>
+    </head>
+    <body>
+        <input type="text" placeholder="enter first string" id="txt1"/><br><Br>
+        <input type="text" placeholder="enter second string" id="txt2"/><br><Br>
+            <input type="button" value="click me!" onclick="Concat(txt1,txt2,dv)"/><br><br>
+            <div id="dv"></div>
+
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<!--task 5.4(b)-->
+<html>
+    <head>
+
+<script>
+function getResult(txt)
+{
+    var x=txt.value;
+    var n=x.length;
+    alert("Initial length of String: "+n); 
+      x=x.trim();
+      //x=x.trimStart();
+      //x=x.trimEnd();
+      n=x.length;
+  alert("After using trime length is: "+n);
+
+}
+</script>
+
+    </head>
+    <body>
+        <input type="text" id="txt" placeholder="type here"/><br><br>
+        <input type="button" onclick="getResult(txt)" value="click here!"/>
+    </body>
+</html>

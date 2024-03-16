@@ -1,0 +1,23 @@
+<!--create a html page and calculate the si in 3 text box and print result in another text using button-->
+<html>
+    <head>
+<script>
+function getResult()
+{
+    var time,rate,amount;
+    amount=document.getElementById("pa").value;
+    time=document.getElementById("t").value;
+    rate=document.getElementById("r").value; 
+  var  si=(time*rate*amount)/100;
+    document.getElementById("res").value=si;
+}
+</script>
+    </head>
+    <body>
+  <input type="text" id="pa" placeholder="value of amount"/><br><br/>
+  <input type="text" id="r" placeholder="value of rate"/><br><Br>
+<input type="text" id="t" placeholder="enter time"/><br><br>
+<input type="button" value="result" onclick="getResult()"/><br><br>
+<input type="text" id="res" placeholder="result here"/>
+    </body>
+    </html>

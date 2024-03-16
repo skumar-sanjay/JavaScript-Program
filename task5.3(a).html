@@ -1,0 +1,18 @@
+<!--create a html page to read a character from input box and print ASCII value of that character in div tag on clcik button-->
+<html>
+    <head>
+<script>
+    function getAscii(txt,dv)
+    {
+        var str=txt.value;
+          x=str.charCodeAt(0);
+        dv.innerHTML="ASCII value of given character is: "+x;
+    }
+    </script>
+    </head>
+    <body>
+        <input type="text" placeholder="enter any character" id="txt"/><br><br>
+        <input type="button" value="click me!" onclick="getAscii(txt,dv)"/><br><br>
+        <div id="dv"></div>
+    </body>
+</html>

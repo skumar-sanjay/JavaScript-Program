@@ -1,0 +1,29 @@
+<!--create a html page to find number of days in a month-->
+<html>
+  <head>
+    <script>
+function monthDays(txt,n)
+{
+  var p=parseInt(txt.value);
+  if(n==1 ||n==3||n==5 || n==7 ||n==8 ||n==10 ||n==12){
+    return 31;
+  }
+  else if(n==4 || n==6 ||n==9||n==11){
+    return 30;
+  }
+  else if(n==2){
+    return 28;
+  }
+  else{
+    return "Error";
+  }
+  p.innerHTML=
+}
+
+    </script>
+  </head>
+  <body<input type="number" id="txt" placeholder="enter month"/><br><br>
+<input type="button" value="getres" onclick="monthDays(txt,n)"/><br>
+<div id="n"></div>
+  </body>
+</html>

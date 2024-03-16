@@ -1,0 +1,25 @@
+<!--rerad name,gender,city,address of user inside in text and print in p tag onclick button-->
+<html>
+    <head>
+        <script>
+            function getResult()
+            {
+    var n,c,g,a,detail;
+    n=document.getElementById("name").value;
+    c=document.getElementById("city").value;
+    g=document.getElementById("gender").value;
+    a=document.getElementById("address").value;
+    document.getElementById("detail").innerHTML="name is: "+n+"<br>city is: "+c+"<br>gender is: "+g+"<br>address is: "+a;
+            }
+        </script>
+
+    </head>
+    <body>
+    <input type="text" placeholder="Enter your name" id="name"/><br><br/>
+    <input type="text" placeholder="Enter your city" id="city"/><br><br/>
+    <input type="text" placeholder="Enter your gender" id="gender"/><br><br/>
+    <input type="text" placeholder="Enter your address" id="address"/><br/></br>
+    <input type="button" value="submit" onclick="getResult()"/><br><br/>
+    <p id="detail"></p>
+    </body>
+</html>
