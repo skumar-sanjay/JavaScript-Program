@@ -1,0 +1,20 @@
+<!--Create a HTML page to read any 5 numbers from user in an array by using prompt box and print only even items inside page by using document.write() function-->
+<html>
+    <head>
+        <script>
+var mynums=new Array(5);
+var x;
+for(x=0;x<mynums.length;x++){
+    mynums[x]=prompt("Enter numbers: ");
+}
+    for(x=0;x<mynums.length;x++){
+        if(mynums[x]%2==0)
+        document.write(mynums[x]);
+        }
+    
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

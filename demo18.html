@@ -1,0 +1,23 @@
+<!-- create a html page to read of a div tag and apply that style in p tag during run-time using JS-->
+<html>
+    <head>
+        <script>
+function applyCSS()
+{
+    var dv=document.getElementById("mydiv");
+    var pr=document.getElementById("mypara");
+    pr.style.backgroundColor=dv.style.backgroundColor;
+    pr.style.color=dv.style.color;
+    pr.style.fontSize=dv.style.fontSize;
+    pr.style.border=dv.style.border;
+    pr.style.height=dv.style.height;
+}
+        </script>
+    </head>
+    <body>
+        <button id="btn" onclick="applyCSS()">Apply style of div into paragraph.</button><br><br>
+<div id="mydiv" style="width:200px; height:300px; background-color: navy; color:white;font-size:25px; border:2px solid red">
+</div>
+<p id="mypara"></p>
+    </body>
+</html>

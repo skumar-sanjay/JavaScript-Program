@@ -1,0 +1,22 @@
+<!--Create a HTML page to store name of some technologies in an array statically. On click of a button display all that technology names inside a p tag using JS.-->
+<html>
+    <head>
+        <script>
+            function getTechno()
+            {
+            var technologies=["Java","Python",".Net","C lanuage","ReactJS"];
+            var dd=document.getElementById("para");
+            var items=" ";
+            for(x=0;x<technologies.length;x++){
+                items=items+"<br>"+technologies[x];
+            }
+            dd.innerHTML=items;
+        }
+        </script>
+    </head>
+    <body>
+        <input type="button" value="technology" onclick="getTechno()"/>
+        <br><br>
+        <p id="para"></p>
+    </body>
+</html>

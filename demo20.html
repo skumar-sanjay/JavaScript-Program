@@ -1,0 +1,38 @@
+ <!--create a html page to find max number from 3 numbers using JS. read 3 numbers from 3 textbox and print result inside p tag-->
+<html>
+    <head>
+        <script>
+function getMax()
+{
+    var n1,n2,n3;
+    n1=document.getElementById("num1"); 
+    n2=document.getElementById("num2");
+    n3=document.getElementById("num3");
+    var t1,t2,t3,max;
+    t1=parseInt(n1.value);
+    t2=parseInt(n2.value);
+    t3=parseInt(n3.value);
+    if(t1>t2 && t1>t3){
+        m=t1;
+    }
+    else if(t2>t1 && t2>t3){
+        m=t2;
+    }
+    else if(t3>t1 && t3>t1){
+        m=t3;
+    }
+    else{
+        m="unknown number"+m;
+    }
+    document.getElementById("para").innerText="Max number is: "+m;
+}
+        </script>
+    </head>
+    <body>
+        <input type="number" placeholder="enter first number" id="num1"/><br><br>
+        <input type="number" placeholder="enter second  number" id="num2"/><br><br>
+        <input type="number" placeholder="enter third number" id="num3"/><br><br>
+        <input type="button" value="find max" onclick="getMax()"/><br><br>
+        <p id="para"></p>
+    </body>
+</html>

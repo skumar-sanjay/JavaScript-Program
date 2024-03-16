@@ -1,0 +1,23 @@
+<!-- create a html page to show and hide an enquiry form by using js-->
+<html>
+    <head>
+        <script>
+function manageBox()
+{
+    var dv=document.getElementById("dvq");
+    var status=dv.style.display.toLowerCase();
+    if(status=="none"){
+        dv.style.display="block";
+    }
+    else{
+        dv.style.display="none";
+    }
+}
+        </script>
+    </head>
+    <body>
+        <span id="spq" onclick="manageBox()" style="width:60px;font-size:25px;padding:10px;position:absolute;right:0px;top:150px;background-color:navy;color:white;cursor:pointer;">Enquiry</span>
+
+        <div id="dvq" style="width:300px;height:400px;background-color:red;padding:5px;position:absolute;top:200px;right:0px;display:none;"></div>
+    </body>
+</html>

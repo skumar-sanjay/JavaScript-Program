@@ -1,0 +1,21 @@
+<!--Create a HTML page to display all items of an array inside an ul tag on page load.-->
+<html>
+    <head>
+        <script>
+  function addFriend()
+  {
+    var items=["Toys","Mobile","Clothes","Choklates","Shoes"];
+    var dd=document.getElementById("list");
+    var total="";
+    for(x=0;x<items.length;x++){
+        total=total+"<li>"+items[x]+"<li>";
+    }
+    dd.innerHTML=total;
+  }
+        </script>
+    </head>
+    <body>
+        <input type="button" value="add value in  ul" onclick="addFriend()"/><br><br>
+        <ul id="list"></ul>
+    </body>
+</html>

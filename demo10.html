@@ -1,0 +1,21 @@
+<!-- create a html page read your name in one textrbox anp print that name in another texr-->
+<html>
+    <head>
+        <script>
+   function getMyname()
+   {
+   var n1,n2,n11;
+   n1=document.getElementById("name");
+   n2=document.getElementById("yname");
+n11=n1.value;
+n2.value=n11;
+   }
+        </script>
+    </head>
+    <body>
+        <input type="text" placeholder="Enter your name" id="name"/><br><br> 
+        <input type="button" value="GetNumber" onclick="getMyname()"/><br><br>
+        <input type="text" placeholder="Result" id="yname"/>
+       
+    </body>
+</html>

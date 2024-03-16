@@ -1,0 +1,22 @@
+<!--creata a html page to find area of rectangle on click of button print result in span tag-->
+<html>
+<head>
+    <script>
+        function getAre()
+        {
+        var l,w,arr;
+        l=document.getElementById("len").value;
+        w=document.getElementById("wid").value;
+        arr=l*w;
+        document.getElementById("rec").innerText="Area of ractangle is:"+arr;
+        }
+    </script>
+</head>
+<body>
+<input type="number" placeholder="enter length" id="len"/><br><br>
+<input type="number" placeholder="enter width" id="wid"/><br><br>
+<span id="rec"></span><br><br> 
+<input type="button" value="submit" onclick="getAre()"/>
+
+</body>
+</html>

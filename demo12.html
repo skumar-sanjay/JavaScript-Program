@@ -1,0 +1,23 @@
+<!-- create a html page to calculate si. reaad p,r, and t print in div. onclick button-->
+<html>
+    <head>
+        <script>
+function getSI()
+{
+var p,r,t,si;
+p=document.getElementById("pa").value;
+r=document.getElementById("rate").value;
+t=document.getElementById("time").value;
+si=(p*r*t)/100;
+document.getElementById("siof").innerText="Si is :"+si;
+}
+        </script>
+    </head>
+    <body>
+<input type="number" placeholder="enter principle" id="pa"/><br><br>
+<input type="number" placeholder="enter r" id="rate"/><br><br>
+<input type="number" placeholder="enter t" id="time"/><br><br>
+<input type="button" value="SI" onclick="getSI()"/>
+<div id="siof"></div>
+    </body>
+</html>

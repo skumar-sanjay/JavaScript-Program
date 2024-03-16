@@ -1,0 +1,28 @@
+ <!--create html page to demostrate the use of getElementsByClassName function and use of style manipulate usingJS-->
+<html>
+    <head>
+    <script>
+        function myFun()
+        {
+            var pr=document.getElementsByClassName("mycls");
+            for(x=0;x<pr.length;x++){
+                pr[x].style.color="blue";
+                pr[x].style.fontSize="30px";
+                pr[x].style.backgroundColor="lightgreen";
+                pr[x].style.width="250px";
+                pr[x].style.height="100px";
+            }
+        }
+    </script>
+    </head>
+    <body>
+    <button id="btn" onclick="myFun()">Click here</button> <br><br>
+    <p class="mycls">C Programming</p>
+    </p>Java Language</p>
+    <div class="mycls">Python</div>
+    <p>.Net</p>
+    <p class="mycls">Java Script</p>
+    <div>JQuery</div>
+    </body>
+    </body>
+</html> 

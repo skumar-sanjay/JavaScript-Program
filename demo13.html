@@ -1,0 +1,31 @@
+<!--create html page to name,age,city and mob of a person and print that result in div tag in html on click button,name,age and mob on text box and city from select-->
+<html>
+    <head>
+        <script>
+            function getDetail()
+            {
+     var n,a,m,c,res;
+n=document.getElementById("ename").value;
+a=document.getElementById("ag").value;
+m=document.getElementById("mo").value;
+c=document.getElementById("ct").value;
+document.getElementById("res").innerHTML="Your name is: "+n+ "<br>Your age is: "+a+"<br>your mob is:"+m+ "<br>your city is: "+c;
+
+            }
+        </script>
+    </head>
+    <body>
+        <input type="text" placeholder="enter your name" id="ename"/><br><br>
+        <input type="number" placeholder="enter your age" id="ag"/><br><br>
+        <select id="ct">
+            <option value="">select city</option>
+            <option>Prayagraj</option>
+            <option>lucknow</option>
+            <option>jaunpur</option>
+            <option>Varanshi</option>
+    </select><br><br>
+        <input type="number" placeholder="enter your mob" id="mo"/><br><br>
+        <input type="button" value="getval" onclick="getDetail()"/><br>
+        <div id="res"></div>
+    </body>
+</html>

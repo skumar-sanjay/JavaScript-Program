@@ -1,0 +1,21 @@
+<!--create a html page to display a static image and some content inside div. print all the content inside p tag on click of a button-->
+<html>
+    <head>
+        <script>
+            function getDisplay()
+            {
+                var rd;
+                rd=document.getElementById("dv").innerHTML;
+document.getElementById("dis").innerHTML=rd; 
+            }
+        </script>
+    </head>
+        <body>
+        <div id="dv">
+        <img src="./image/images.jpg" height="350px" width="300px"/>
+        <h1>This is a html code . here are display the content.there are many deference.here are amny programming languages.</h1>
+       </div> <br><br>  
+       <input type="button" id="btn" value="submit" onclick="getDisplay()"/> 
+       <p id="dis"></p>
+        </body>
+</html>

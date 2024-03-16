@@ -1,0 +1,32 @@
+<!--create  a page to read marks of 5 subject text box and print sum in p
+,percentage in div tag-->
+<html>
+    <head>
+        <script>
+function getRes()
+{
+var p,c,m,e,h,sum,percentage;
+p=document.getElementById("phy").value;
+c=document.getElementById("che").value;
+m=document.getElementById("math").value;
+e=document.getElementById("eng").value;
+h=document.getElementById("hin").value;
+sum=parseInt(p)+parseInt(c)+parseInt(m)+parseInt(e)+parseInt(h);
+document.getElementById("sum").innerText="sum of marks: "+sum;
+percentage=(sum*100)/500;
+document.getElementById("per").innerText="percentage of marks: "+ percentage;
+            }
+        </script>
+    </head>
+    <body>
+        <input type="number" placeholder="marks of phy" id="phy"/><br><br>
+        <input type="number" placeholder="marks of che" id="che"/><br><br>
+        <input type="number" placeholder="marks of math" id="math"/><br><br>
+        <input type="number" placeholder="marks of eng" id="eng"/><br><br>
+        <input type="number" placeholder="marks of hin" id="hin"/><br><br>
+        <input type="button" value="submit" onclick="getRes()"/>
+       <p id="sum"> </p>
+        <div id="per"></div>
+    </body>
+ </html>
+

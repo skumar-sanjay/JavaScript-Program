@@ -1,0 +1,29 @@
+<!--Create a HTML page to add name of your 6 friends in a select tag on button click. Store friends name statically in an array.-->
+<html>
+    <head>
+        <script>
+            function getName()
+            {
+                var friends=["Rahul","Rohan","Mohan","Sohan","Mohit","Rohit"];
+                var dd=document.getElementById("ddl");
+                var items=" ";
+                for(x=0;x<=friends.length;x++){
+                   items=items+"<Br>"+friends[x]; 
+                }
+               dd.value=items;
+            }
+        </script>
+    </head>
+        <body>
+            <input type="button" id="btn" value="click me!" onclick="getName()"/><br><br>
+            <select id="ddl">
+                <option value=" ">select name</option>
+                <option>Rahul</option>
+                <option>Rohan</option>
+                <option>Mohan</option>
+                <option>Sohan</option>
+                <option>Mohit</option>
+             <option>Rohit</option>
+            </select>
+        </body>
+</html>
